@@ -55,7 +55,7 @@ const MainNavigation = () => {
             {navlinks.map((link) => (
               <li key={link.id}>
                 <Link href={link.path} className="group relative">
-                  <span className="relative z-10">// {link.text}</span>
+                  <span className="relative z-10">{link.text}</span>
                   <div className="w-0 h-1 bg-blue-700 absolute left-0 bottom-0.5 group-hover:w-full transition-all" />
                 </Link>
               </li>

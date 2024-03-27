@@ -7,7 +7,7 @@ const MobileMenu = () => {
       <ul className="space-y-6">
         {navlinks.map((link) => (
           <li key={link.id}>
-            <Link href={link.path}>// {link.text}</Link>
+            <Link href={link.path}>{link.text}</Link>
           </li>
         ))}
       </ul>
