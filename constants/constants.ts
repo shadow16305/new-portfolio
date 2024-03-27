@@ -53,3 +53,18 @@ export const projects = [
     site_link: "",
   },
 ];
+
+export const socials = [
+  {
+    text: "LinkedIn",
+    link: "https://www.linkedin.com/in/chris-ab-a89133215/",
+  },
+  {
+    text: "Telegram",
+    link: "https://t.me/Shadow163",
+  },
+  {
+    text: "Github",
+    link: "https://github.com/shadow16305",
+  },
+];

@@ -1,3 +1,4 @@
+import { socials } from "@/constants/constants";
 import { cn } from "@/utils/cn";
 import { poppins, roboto } from "@/utils/fonts";
 
@@ -11,21 +12,19 @@ const Footer = () => {
             back to you as soon as possible.
           </p>
           <div className="flex flex-col items-center md:items-start gap-y-2">
-            <p className={cn("font-bold", poppins.className)}>chris16305@gmail.com</p>
+            <a href="mailto:chris16305@gmail.com" className="group relative">
+              <p className={cn("z-10 relative font-bold", poppins.className)}>chris16305@gmail.com</p>
+              <div className="bg-orange-500 absolute bottom-0.5 left-0 w-full h-2 group-hover:h-full z-0 transition-all" />
+            </a>
             <div className="flex flex-col items-center md:items-start gap-y-2">
-              <a
-                href="https://www.linkedin.com/in/chris-ab-a89133215/"
-                target="_blank"
-                rel="noreferrer"
-                className={roboto.className}>
-                LinkedIn
-              </a>
-              <a href="https://t.me/Shadow163" target="_blank" rel="noreferrer" className={roboto.className}>
-                Telegram
-              </a>
-              <a href="https://github.com/shadow16305" target="_blank" rel="noreferrer" className={roboto.className}>
-                Github
-              </a>
+              {socials.map((link, index) => (
+                <div className="group relative" key={index}>
+                  <a href={link.link} target="_blank" rel="noreferrer" className={roboto.className}>
+                    {link.text}
+                  </a>
+                  <div className="w-0 h-1 bg-orange-500 absolute left-0 bottom-0.5 group-hover:w-full transition-all" />
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -34,7 +33,7 @@ const Footer = () => {
             "flex items-center text-white md:w-1/2 z-10 w-full bg-indigo-600 md:bg-transparent py-4 md:py-0",
             roboto.className
           )}>
-          <p className="max-w-[340px] md:max-w-[500px] w-full mx-auto md:pl-6 lg:pl-0">
+          <p className="max-w-[340px] md:max-w-[500px] w-full mx-auto md:pl-6">
             When I'm not coding, you'll find me strumming my guitar, hitting the gym, or diving into gaming adventures.
             Let's collaborate and turn your ideas into digital reality!
           </p>
