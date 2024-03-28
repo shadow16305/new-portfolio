@@ -3,6 +3,7 @@ import { poppins, roboto } from "@/utils/fonts";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub, FaTelegram } from "react-icons/fa";
 import { Boxes } from "./ui/background-boxes";
+import { IoIosArrowDown } from "react-icons/io";
 
 const socials = [
   {
@@ -33,7 +34,8 @@ const Hero = () => {
           </li>
         ))}
       </ul>
-      <div className="absolute inset-0 [mask-image:radial-gradient(white,transparent)]">
+      <IoIosArrowDown size={32} className="absolute left-1/2 -translate-x-1/2 bottom-10 animate-pulse" />
+      <div className="absolute inset-0 [mask-image:radial-gradient(white,transparent)] hidden lg:block">
         <Boxes />
       </div>
     </section>

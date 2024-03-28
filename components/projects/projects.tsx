@@ -16,7 +16,7 @@ const Projects = () => {
             imgSrc={project.imgSrc}
             github={project.github_link}
             site={project.site_link}
-            width={project.id === "p4" ? "lg:w-[820px]" : "lg:w-[400px]"}
+            width={project.id === "p4" ? "lg:w-[680px] 2xl:w-[820px]" : "2xl:w-[400px]"}
           />
         ))}
       </section>

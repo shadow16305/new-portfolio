@@ -16,10 +16,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imgSrc, github, site, 
     <CardContainer className="inter-var">
       <CardBody
         className={cn(
-          "relative group/card bg-[#201F23] w-[340px] md:w-[360px] lg:w-[400px] h-auto p-6 rounded-lg",
+          "relative group/card bg-[#201F23] w-[340px] md:w-[360px] lg:w-[330px] 2xl:w-[400px] h-auto p-6 rounded-lg",
           width
         )}>
-        <CardItem translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
+        <CardItem translateZ="50" className="text-xl font-bold text-white">
           {title}
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
@@ -37,7 +37,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imgSrc, github, site, 
             as={Link}
             href={github}
             target="__blank"
-            className="px-4 py-2 rounded-xl font-normal dark:text-white">
+            className="px-4 py-2 rounded-xl font-normal text-white">
             Github →
           </CardItem>
           <CardItem
