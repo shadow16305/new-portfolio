@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imgSrc, github, site, 
     <CardContainer className="inter-var">
       <CardBody
         className={cn(
-          "relative group/card bg-[#201F23] w-[340px] md:w-[360px] lg:w-[330px] 2xl:w-[400px] h-auto p-6 rounded-lg",
+          "relative group/card bg-[#201F23] w-[340px] md:w-[360px] lg:w-[330px] xl:w-[370px] 2xl:w-[400px] h-auto p-6 rounded-lg",
           width
         )}>
         <CardItem translateZ="50" className="text-xl font-bold text-white">
