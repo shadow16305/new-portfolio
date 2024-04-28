@@ -12,7 +12,7 @@ const Skills = () => {
           roboto.className
         )}>
         HTML, CSS, JavaScript, TypeScript, React.js, Next.js, Express, Tailwind, Node.js, Bootstrap, MongoDB, Mongoose,
-        Prisma
+        Prisma, Figma and basic UX/UI design
       </p>
     </section>
   );

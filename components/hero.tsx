@@ -25,12 +25,14 @@ const Hero = () => {
     <section className="bg-gradient-to-b from-[#17202A] to-[#1A191D] text-white h-screen flex flex-col items-center justify-center relative overflow-hidden ">
       <h1 className={cn("font-bold text-4xl md:text-8xl uppercase z-10", poppins.className)}>christian a.b.</h1>
       <p className={cn("font-bold mt-3 text-center z-10", roboto.className)}>
-        Nice to meet you! I’m a full-stack developer.
+        Nice to meet you! I’m a React / NextJS developer.
       </p>
       <ul className="flex items-end gap-x-6 mt-24">
         {socials.map((item, index) => (
           <li key={index} className="z-10 transition-all hover:scale-110">
-            <a href={item.link}>{item.icon}</a>
+            <a href={item.link} target="_blank" rel="noreferrer">
+              {item.icon}
+            </a>
           </li>
         ))}
       </ul>
